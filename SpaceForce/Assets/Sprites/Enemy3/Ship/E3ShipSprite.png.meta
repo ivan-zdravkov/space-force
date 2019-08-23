@@ -138,7 +138,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 129
+        y: 128
         width: 128
         height: 128
       alignment: 0
@@ -148,7 +148,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc8820ac27a2f1c4687fe5778c00af62
+      spriteID: 611e450983bfbf74aa04e3ad027c884b
       internalID: 732216563364889951
       vertices: []
       indices: 
@@ -159,7 +159,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 129
+        y: 128
         width: 128
         height: 128
       alignment: 0
@@ -169,7 +169,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e71bd00da924bd448016b300cceb63e
+      spriteID: 27ae1fa666a3d9542bfffb3492306559
       internalID: 3680176292017856418
       vertices: []
       indices: 
@@ -179,8 +179,8 @@ TextureImporter:
       name: E3ShipSprite_2
       rect:
         serializedVersion: 2
-        x: 256
-        y: 129
+        x: 0
+        y: 0
         width: 128
         height: 128
       alignment: 0
@@ -190,7 +190,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51135aeef8246c145ae51497322d06e7
+      spriteID: 59571f1e3debe8843ae5c0e540062705
       internalID: -4051315498451703601
       vertices: []
       indices: 
@@ -200,8 +200,8 @@ TextureImporter:
       name: E3ShipSprite_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1
+        x: 128
+        y: 0
         width: 128
         height: 128
       alignment: 0
@@ -211,7 +211,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fca03c47d750bc94f9aec5414c72bd4e
+      spriteID: a0e4da5ce05ca3b40bbdab52192e6717
       internalID: 5374217400831456435
       vertices: []
       indices: 
