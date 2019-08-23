@@ -138,7 +138,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 513
+        y: 512
         width: 512
         height: 512
       alignment: 0
@@ -148,7 +148,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2470b1b37306cd243a7f9164c06179c2
+      spriteID: abcdc955380fb204caba24805a9999a9
       internalID: 2828989552474486286
       vertices: []
       indices: 
@@ -159,7 +159,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 512
-        y: 513
+        y: 512
         width: 512
         height: 512
       alignment: 0
@@ -169,7 +169,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6432cd8fef4201a4cbeb8eb5ce48ce5f
+      spriteID: 8c6cd453447498a4f9121a3d46cbeb10
       internalID: -3144168630049914624
       vertices: []
       indices: 
@@ -179,8 +179,8 @@ TextureImporter:
       name: S3_2
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 513
+        x: 0
+        y: 0
         width: 512
         height: 512
       alignment: 0
@@ -190,7 +190,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a58caffebcfefba45bfbfc2d36b25a23
+      spriteID: 073e4b09ce340934fb8e0a21d771a1b4
       internalID: 584255097254047170
       vertices: []
       indices: 
@@ -200,8 +200,8 @@ TextureImporter:
       name: S3_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1
+        x: 512
+        y: 0
         width: 512
         height: 512
       alignment: 0
@@ -211,7 +211,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a18044f0a583b9d45bc9de5b5d21de40
+      spriteID: 015c1a60a25eca74ea1e21ad228c5b99
       internalID: -3106335621927495338
       vertices: []
       indices: 
