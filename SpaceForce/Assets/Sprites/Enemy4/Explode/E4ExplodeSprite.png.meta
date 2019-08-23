@@ -4,22 +4,22 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 6579640724104573831
-    second: E4ExplodeSprite_0
+    second: 1
   - first:
       213: -8321376255710521221
-    second: E4ExplodeSprite_1
+    second: 2
   - first:
       213: -4166252224767364329
     second: E4ExplodeSprite_2
   - first:
       213: 6956807761035980038
-    second: E4ExplodeSprite_3
+    second: 5
   - first:
       213: -1234319266621683263
     second: E4ExplodeSprite_6
   - first:
       213: 8649243281236496190
-    second: E4ExplodeSprite_8
+    second: 3
   - first:
       213: 6895165024433314824
     second: E4ExplodeSprite_10
@@ -28,13 +28,28 @@ TextureImporter:
     second: E4ExplodeSprite_12
   - first:
       213: -7831608218179467461
-    second: E4ExplodeSprite_16
+    second: 9
   - first:
       213: -3670256899722559648
-    second: E4ExplodeSprite_18
+    second: 10
   - first:
       213: 7815776711300376331
     second: E4ExplodeSprite_20
+  - first:
+      213: 6501298950303736333
+    second: 7
+  - first:
+      213: -1816755548282093316
+    second: 4
+  - first:
+      213: 6967745887157389618
+    second: 6
+  - first:
+      213: -3181606171480048652
+    second: 8
+  - first:
+      213: 6346318911325233748
+    second: 11
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -155,11 +170,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: E4ExplodeSprite_0
+      name: 1
       rect:
         serializedVersion: 2
         x: 64
-        y: 578
+        y: 832
         width: 128
         height: 128
       alignment: 0
@@ -169,18 +184,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e4b686d26b53664aa887cd1f50ad036
+      spriteID: a9d5a3e11afdae24ba3d9a02ff1915cc
       internalID: 6579640724104573831
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: E4ExplodeSprite_1
+      name: 2
       rect:
         serializedVersion: 2
         x: 320
-        y: 578
+        y: 832
         width: 128
         height: 128
       alignment: 0
@@ -190,18 +205,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 270a80de261d5f348aaeb924255da5cc
+      spriteID: 2e09f9fcdc7c9424bbe8eb21397442a9
       internalID: -8321376255710521221
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: E4ExplodeSprite_2
+      name: 5
       rect:
         serializedVersion: 2
         x: 576
-        y: 578
+        y: 832
         width: 128
         height: 128
       alignment: 0
@@ -211,39 +226,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dbf0d926c020dfb46aee9b88835b43ee
-      internalID: -4166252224767364329
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: E4ExplodeSprite_3
-      rect:
-        serializedVersion: 2
-        x: 832
-        y: 578
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 331e76969186dd54da0ed4eeb4a7762b
+      spriteID: 2b1a8794d4e362c4a9e3ed4c5004f154
       internalID: 6956807761035980038
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: E4ExplodeSprite_6
+      name: 7
       rect:
         serializedVersion: 2
-        x: 64
-        y: 322
+        x: 832
+        y: 832
         width: 128
         height: 128
       alignment: 0
@@ -253,18 +247,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b85bf1e1d46c9a5488a00c4e4939ed52
-      internalID: -1234319266621683263
+      spriteID: 177ac4885dfc69442802247efda3bd4c
+      internalID: 6501298950303736333
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: E4ExplodeSprite_8
+      name: 3
       rect:
         serializedVersion: 2
-        x: 320
-        y: 322
+        x: 64
+        y: 576
         width: 128
         height: 128
       alignment: 0
@@ -274,18 +268,39 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 096f0147c518a034aab2e1fe27a33f02
+      spriteID: c9ad899482220fb45b1d9278bfd2955a
       internalID: 8649243281236496190
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: E4ExplodeSprite_10
+      name: 4
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 576
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73d838c76f7b2d5468a26130d702c54f
+      internalID: -1816755548282093316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 6
       rect:
         serializedVersion: 2
         x: 576
-        y: 322
+        y: 576
         width: 128
         height: 128
       alignment: 0
@@ -295,18 +310,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56593156932843d4c8f4ca2223880732
-      internalID: 6895165024433314824
+      spriteID: 1e8e145dfca778549bf748c64cee9b99
+      internalID: 6967745887157389618
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: E4ExplodeSprite_12
+      name: 8
       rect:
         serializedVersion: 2
         x: 832
-        y: 322
+        y: 576
         width: 128
         height: 128
       alignment: 0
@@ -316,18 +331,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d27ff7b39dc6864186910909bcb279f
-      internalID: 3140972729690833113
+      spriteID: c4b81db85ef83a4429d6a330a54a96ef
+      internalID: -3181606171480048652
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: E4ExplodeSprite_16
+      name: 9
       rect:
         serializedVersion: 2
         x: 64
-        y: 66
+        y: 320
         width: 128
         height: 128
       alignment: 0
@@ -337,18 +352,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54cd042b4ffe93e4896e8de89f0b083d
+      spriteID: 52aa58187f1b6c349acfe2c281206d63
       internalID: -7831608218179467461
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: E4ExplodeSprite_18
+      name: 11
       rect:
         serializedVersion: 2
         x: 320
-        y: 66
+        y: 320
         width: 128
         height: 128
       alignment: 0
@@ -358,18 +373,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1eeb34ff8be1b164ebfef4a7927184bc
-      internalID: -3670256899722559648
+      spriteID: 5832418dc7836f248910941ded6a1dca
+      internalID: 6346318911325233748
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: E4ExplodeSprite_20
+      name: 10
       rect:
         serializedVersion: 2
-        x: 576
-        y: 66
+        x: 64
+        y: 64
         width: 128
         height: 128
       alignment: 0
@@ -379,8 +394,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1efbabfce0bdd3046b7c8f8413d4d54a
-      internalID: 7815776711300376331
+      spriteID: d01cb9f8a5ea27e42994565ecd0210c7
+      internalID: -3670256899722559648
       vertices: []
       indices: 
       edges: []

@@ -4,19 +4,19 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -8677170809727916322
-    second: E3ExplodeSprite_0
+    second: 1
   - first:
       213: 4039171051620314642
-    second: E3ExplodeSprite_1
+    second: 2
   - first:
       213: -225564534512020074
-    second: E3ExplodeSprite_2
+    second: 5
   - first:
       213: -6365346360209058217
     second: E3ExplodeSprite_3
   - first:
       213: 4767873765509182736
-    second: E3ExplodeSprite_4
+    second: 7
   - first:
       213: 4127478944027855252
     second: E3ExplodeSprite_5
@@ -25,16 +25,25 @@ TextureImporter:
     second: E3ExplodeSprite_6
   - first:
       213: 1219653303645799004
-    second: E3ExplodeSprite_7
+    second: 3
   - first:
       213: 761142236153097652
-    second: E3ExplodeSprite_10
+    second: 6
   - first:
       213: -6115152491808730382
-    second: E3ExplodeSprite_12
+    second: 8
   - first:
       213: -4000539920890472953
-    second: E3ExplodeSprite_14
+    second: 9
+  - first:
+      213: -1816755548282093316
+    second: 4
+  - first:
+      213: 6346318911325233748
+    second: 11
+  - first:
+      213: -8655818156195654838
+    second: 10
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -155,11 +164,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: E3ExplodeSprite_0
+      name: 1
       rect:
         serializedVersion: 2
         x: 64
-        y: 578
+        y: 832
         width: 128
         height: 128
       alignment: 0
@@ -169,18 +178,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43c0850730df8ca47a6e9df3b27e820d
+      spriteID: 6c5de8ed9c4d53848baacf47afb9a02c
       internalID: -8677170809727916322
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: E3ExplodeSprite_1
+      name: 2
       rect:
         serializedVersion: 2
         x: 320
-        y: 578
+        y: 832
         width: 128
         height: 128
       alignment: 0
@@ -190,18 +199,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87907e948c819b949bcdcfc91044d8e9
+      spriteID: 4c40b159e0b962e478a009b90602bf3c
       internalID: 4039171051620314642
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: E3ExplodeSprite_2
+      name: 5
       rect:
         serializedVersion: 2
         x: 576
-        y: 578
+        y: 832
         width: 128
         height: 128
       alignment: 0
@@ -211,18 +220,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43721beb2716f9342bd1cf016aa06305
+      spriteID: ab2ecf21893fb304d80d99b39ab783cb
       internalID: -225564534512020074
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: E3ExplodeSprite_3
+      name: 7
       rect:
         serializedVersion: 2
         x: 832
-        y: 578
+        y: 832
         width: 128
         height: 128
       alignment: 0
@@ -232,39 +241,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18e9712131ef22341b4e39b777fddb16
-      internalID: -6365346360209058217
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: E3ExplodeSprite_4
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 322
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f1994572784931045a1da7dad6167a0e
+      spriteID: df0347035beabe246b4475e77a71fac0
       internalID: 4767873765509182736
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: E3ExplodeSprite_5
+      name: 3
       rect:
         serializedVersion: 2
-        x: 320
-        y: 322
+        x: 64
+        y: 576
         width: 128
         height: 128
       alignment: 0
@@ -274,60 +262,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32da7ccf6de30574a8cdc5dbaa9ffe05
-      internalID: 4127478944027855252
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: E3ExplodeSprite_6
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 322
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 780f9e29ba8887644b8380187c691b10
-      internalID: -2519615264548432109
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: E3ExplodeSprite_7
-      rect:
-        serializedVersion: 2
-        x: 832
-        y: 322
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 715715bb9b19e8f4fbe58b0da324a17a
+      spriteID: 5bead256ea89629498cd61aefb27cb89
       internalID: 1219653303645799004
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: E3ExplodeSprite_10
+      name: 4
       rect:
         serializedVersion: 2
-        x: 64
-        y: 66
+        x: 320
+        y: 576
         width: 128
         height: 128
       alignment: 0
@@ -337,18 +283,39 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1390be8005a13ce41947705ce58aab04
+      spriteID: 71cbe3ab49b0b1e40af2f13be5d36070
+      internalID: -1816755548282093316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 6
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 576
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cf447d9deadca346b686fbbff5722ef
       internalID: 761142236153097652
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: E3ExplodeSprite_12
+      name: 8
       rect:
         serializedVersion: 2
-        x: 320
-        y: 66
+        x: 832
+        y: 576
         width: 128
         height: 128
       alignment: 0
@@ -358,18 +325,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28af40ee54c682947acdc6f2c77a60ab
+      spriteID: 801a13a2bfad3df42bcd71a07cecc648
       internalID: -6115152491808730382
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: E3ExplodeSprite_14
+      name: 9
       rect:
         serializedVersion: 2
-        x: 576
-        y: 66
+        x: 64
+        y: 320
         width: 128
         height: 128
       alignment: 0
@@ -379,8 +346,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2607780949d547b4ca30ace66f35cab6
+      spriteID: 081691f2c01c6aa4fb030b9119fe7071
       internalID: -4000539920890472953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 11
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 320
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 886b99559f08bc34d919e9baedf9e780
+      internalID: 6346318911325233748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c19680ca0e92637448fce74408be334c
+      internalID: -8655818156195654838
       vertices: []
       indices: 
       edges: []
