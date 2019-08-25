@@ -1,0 +1,9 @@
+Missile_3_Explosion_000 = 0 0 810 810
+Missile_3_Explosion_001 = 810 0 810 810
+Missile_3_Explosion_002 = 0 810 810 810
+Missile_3_Explosion_003 = 810 810 810 810
+Missile_3_Explosion_004 = 1620 0 810 810
+Missile_3_Explosion_005 = 1620 810 810 810
+Missile_3_Explosion_006 = 2430 0 810 810
+Missile_3_Explosion_007 = 3240 0 810 810
+Missile_3_Explosion_008 = 2430 810 810 810

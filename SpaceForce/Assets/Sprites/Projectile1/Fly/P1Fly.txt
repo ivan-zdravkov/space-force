@@ -1,0 +1,10 @@
+Missile_1_Flying_000 = 0 0 141 517
+Missile_1_Flying_001 = 141 0 141 517
+Missile_1_Flying_002 = 282 0 141 517
+Missile_1_Flying_003 = 423 0 141 517
+Missile_1_Flying_004 = 564 0 141 517
+Missile_1_Flying_005 = 705 0 141 517
+Missile_1_Flying_006 = 846 0 141 517
+Missile_1_Flying_007 = 987 0 141 517
+Missile_1_Flying_008 = 1128 0 141 517
+Missile_1_Flying_009 = 1269 0 141 517
