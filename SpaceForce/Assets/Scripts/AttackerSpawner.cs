@@ -11,6 +11,8 @@ public class AttackerSpawner : MonoBehaviour
 
     IEnumerator Start()
     {
+        this.attackerPrefab.GetComponent<SpriteRenderer>().sortingOrder = 5;
+
         while (this.spawn)
         {
             yield return new WaitForSeconds(Random.Range(this.minSpawn, this.maxSpawn));
