@@ -4,21 +4,30 @@ using UnityEngine;
 
 public class Attacker : MonoBehaviour
 {
-    [SerializeField] [Range(0f, 5f)] float walkSpeed = 1f;
+    float currentSpeed = 0f;
 
     private Animator animator;
 
-    // Start is called before the first frame update
     void Start()
     {
         this.animator = this.GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         AnimatorStateInfo animatorInfo = this.animator.GetCurrentAnimatorStateInfo(SortingLayer.NameToID("Default"));
 
-        transform.Translate(Vector2.left * Time.deltaTime * this.walkSpeed);
+        transform.Translate(Vector2.left * Time.deltaTime * this.currentSpeed);
+    }
+
+    public void SetMovementSpeed(float speed)
+    {
+        if (this.currentSpeed != speed)
+        {
+            if (this.currentSpeed == 0)
+                transform.Translate(-0.1f, 0, 0);
+
+            this.currentSpeed = speed;
+        }
     }
 }
