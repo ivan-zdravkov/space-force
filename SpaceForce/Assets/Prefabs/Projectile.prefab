@@ -95,7 +95,7 @@ Animator:
   m_GameObject: {fileID: 1392333564398572718}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 086ecd4b2bb9ac449986141322270782, type: 2}
+  m_Controller: {fileID: 9100000, guid: 7689e4cf45d9cd6469b0cca4b1f7c88c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -116,6 +116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afe60cbaa609ba041b8b47eea19b2488, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isHit: 0
 --- !u!50 &768047403721054446
 Rigidbody2D:
   serializedVersion: 4
@@ -147,7 +148,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
