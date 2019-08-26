@@ -19,8 +19,6 @@ public class Attacker : MonoBehaviour
     {
         if (this.currentSpeed != speed)
         {
-            if (this.currentSpeed == 0)
-                transform.Translate(-0.1f, 0, 0);
 
             this.currentSpeed = speed;
         }
