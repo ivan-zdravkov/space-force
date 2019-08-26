@@ -28,8 +28,19 @@ public class Projectile : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         this.animator.SetBool("IsHit", true);
-        this.projectileRigidbody.velocity = Vector3.zero;
+        this.projectileRigidbody.velocity = new Vector2(
+            x: this.projectileRigidbody.velocity.x / 2f,
+            y: 0
+        );
 
         Destroy(gameObject, this.animator.GetCurrentAnimatorStateInfo(0).length - 0.1f);
+
+        Health health = collision.gameObject.GetComponent<Health>();
+        Attacker attacker = collision.gameObject.GetComponent<Attacker>();
+
+        if (attacker != null && health != null)
+        {
+            health.DealDamage(this.damage);
+        }
     }
 }

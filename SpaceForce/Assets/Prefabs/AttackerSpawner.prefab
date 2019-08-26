@@ -45,4 +45,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawn: 1.5
   maxSpawn: 7.5
-  attackerPrefab: {fileID: 0}
+  attackerPrefab: {fileID: 8650781189903700909, guid: 6755da7ada1df8d43a8ca6f6a37f4d55,
+    type: 3}
