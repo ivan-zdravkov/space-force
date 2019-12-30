@@ -1493,6 +1493,11 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6158093125840632127, guid: 6ad901ae80444824b8d6021d4a3e3c3c,
+        type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6535621905977593995, guid: 6ad901ae80444824b8d6021d4a3e3c3c,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1526,7 +1531,7 @@ PrefabInstance:
     - target: {fileID: 829909468303320059, guid: 6ad901ae80444824b8d6021d4a3e3c3c,
         type: 3}
       propertyPath: m_Name
-      value: StarsText
+      value: StarText
       objectReference: {fileID: 0}
     - target: {fileID: 8295381240782977585, guid: 6ad901ae80444824b8d6021d4a3e3c3c,
         type: 3}
