@@ -22,12 +22,18 @@ public class DefenderSpawner : MonoBehaviour
         );
 
         Vector3 worldPosition = Camera.main.ScreenToWorldPoint(clickPosition);
+        Vector3 gridPosition = this.SnapToGrid(worldPosition);
 
-        worldPosition.x = Mathf.RoundToInt(worldPosition.x);
-        worldPosition.y = Mathf.RoundToInt(worldPosition.y);
-        worldPosition.z = 0;
+        return gridPosition;
+    }
 
-        return worldPosition;
+    private Vector3 SnapToGrid(Vector3 position)
+    {
+        position.x = Mathf.RoundToInt(position.x);
+        position.y = Mathf.RoundToInt(position.y);
+        position.z = 0;
+
+        return position;
     }
 
     private void SpawnDefender(Vector3 position)
