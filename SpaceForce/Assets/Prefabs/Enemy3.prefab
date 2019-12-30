@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7287751644999149886}
   - component: {fileID: 295189076130342920}
   m_Layer: 5
-  m_Name: Enemy
+  m_Name: Enemy3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8650781189903700945}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.94, y: 4.44, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -74,8 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: -4796716265718206649, guid: 097113a5f494dcb41aec00705df728ce,
-    type: 3}
+  m_Sprite: {fileID: 732216563364889951, guid: c326ca79184374e4caf9f4c2fc85c544, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -96,7 +95,7 @@ Animator:
   m_GameObject: {fileID: 8650781189903700945}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0275c6a164799474f98719e9c672887c, type: 2}
+  m_Controller: {fileID: 9100000, guid: 9a7218e4c58305743b129e41a8600013, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

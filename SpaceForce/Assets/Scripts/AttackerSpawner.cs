@@ -7,11 +7,13 @@ public class AttackerSpawner : MonoBehaviour
     bool spawn = true;
     [SerializeField] [Range(1, 2)] float minSpawn = 1.5f;
     [SerializeField] [Range(5, 10)] float maxSpawn = 7.5f;
-    [SerializeField] Attacker attackerPrefab;
+    [SerializeField] Attacker[] attackerPrefabs;
 
     IEnumerator Start()
     {
-        this.attackerPrefab.GetComponent<SpriteRenderer>().sortingOrder = 5;
+        Attacker attacker = this.GetAttacker();
+
+        attacker.GetComponent<SpriteRenderer>().sortingOrder = 5;
 
         while (this.spawn)
         {
@@ -29,6 +31,15 @@ public class AttackerSpawner : MonoBehaviour
 
     private void Spawn()
     {
-        Instantiate(attackerPrefab, transform.position, Quaternion.identity);
+        Attacker attacker = this.GetAttacker();
+
+        Instantiate(attacker, transform.position, Quaternion.identity);
+    }
+
+    private Attacker GetAttacker()
+    {
+        int i = Random.Range(0, this.attackerPrefabs.Length - 1);
+
+        return this.attackerPrefabs[i];
     }
 }
