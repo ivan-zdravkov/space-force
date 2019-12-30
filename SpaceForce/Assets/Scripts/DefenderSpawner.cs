@@ -17,13 +17,15 @@ public class DefenderSpawner : MonoBehaviour
     {
         Vector3 clickPosition = new Vector3(
             x: Input.mousePosition.x,
-            y: Input.mousePosition.y
+            y: Input.mousePosition.y,
+            z: 0
         );
 
         Vector3 worldPosition = Camera.main.ScreenToWorldPoint(clickPosition);
 
         worldPosition.x = Mathf.RoundToInt(worldPosition.x);
         worldPosition.y = Mathf.RoundToInt(worldPosition.y);
+        worldPosition.z = 0;
 
         return worldPosition;
     }
