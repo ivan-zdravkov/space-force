@@ -5,8 +5,8 @@ using UnityEngine;
 public class AttackerSpawner : MonoBehaviour
 {
     bool spawn = true;
-    [SerializeField] [Range(1, 2)] float minSpawn = 1.5f;
-    [SerializeField] [Range(5, 10)] float maxSpawn = 7.5f;
+    [SerializeField] [Range(1, 5)] float minSpawn = 5f;
+    [SerializeField] [Range(5, 20)] float maxSpawn = 15f;
     [SerializeField] Attacker[] attackerPrefabs;
 
     IEnumerator Start()

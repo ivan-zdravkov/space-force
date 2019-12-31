@@ -43,8 +43,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4621a9c3ebce814784b84fd3a9bb284, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minSpawn: 1.5
-  maxSpawn: 7.5
+  minSpawn: 5
+  maxSpawn: 15
   attackerPrefabs:
   - {fileID: 8650781189903700909, guid: 6755da7ada1df8d43a8ca6f6a37f4d55, type: 3}
   - {fileID: 8650781189903700909, guid: d0cb24356589beb4485d5518ec988589, type: 3}

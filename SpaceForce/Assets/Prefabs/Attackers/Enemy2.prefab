@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7287751644999149886}
   - component: {fileID: 295189076130342920}
   m_Layer: 5
-  m_Name: Enemy4
+  m_Name: Enemy2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 2900307828682579585, guid: dfa0c036b57b3c94e9fc08ab6e17484f,
+  m_Sprite: {fileID: -7888256386207915082, guid: caf0919720eb7d742ac51ef82b6ce99a,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
@@ -96,7 +96,7 @@ Animator:
   m_GameObject: {fileID: 8650781189903700945}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e3e99f249e3ec08408089215a686be87, type: 2}
+  m_Controller: {fileID: 9100000, guid: 479e2a78cc1015f43963a96b9e485344, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -129,7 +129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e190165ed90d7c842b5ccb558f4f21b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 30
+  health: 20
 --- !u!50 &7287751644999149886
 Rigidbody2D:
   serializedVersion: 4

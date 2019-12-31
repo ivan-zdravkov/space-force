@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField][Range(10f, 50f)] float health = 30f;
+    [SerializeField][Range(10f, 100f)] float health = 30f;
 
     Animator animator;
     Rigidbody2D enemyRigidbody;
