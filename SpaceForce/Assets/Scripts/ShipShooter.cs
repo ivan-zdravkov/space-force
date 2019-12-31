@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,11 +11,15 @@ public class ShipShooter : MonoBehaviour
     [SerializeField] Projectile projectile;
     [SerializeField] float damage;
 
+    AttackerSpawner myLaneSpawner;
+
     private float shotCounter;
 
     void Start()
     {
-        this.ResetShoutCounter();
+        SetLaneSpawner();
+
+        this.ResetShootCounter();
     }
 
     void Update()
@@ -22,7 +27,7 @@ public class ShipShooter : MonoBehaviour
         this.CountDownAndShoot();
     }
 
-    private void ResetShoutCounter()
+    private void ResetShootCounter()
     {
         this.shotCounter = UnityEngine.Random.Range(this.shootInterval - this.randomFactor, this.shootInterval + this.randomFactor);
     }
@@ -33,9 +38,29 @@ public class ShipShooter : MonoBehaviour
 
         if (shotCounter <= 0f)
         {
-            this.Fire();
-            this.ResetShoutCounter();
+            if (IsAttackerInLane())
+                this.Fire();
+
+            this.ResetShootCounter();
         }
+    }
+
+    private void SetLaneSpawner()
+    {
+        AttackerSpawner[] spawners = FindObjectsOfType<AttackerSpawner>();
+
+        foreach (AttackerSpawner spawner in spawners)
+        {
+            bool sameLane = Mathf.Abs(spawner.transform.position.y - transform.position.y) <= Mathf.Epsilon;
+
+            if (sameLane)
+                myLaneSpawner = spawner;
+        }
+    }
+
+    private bool IsAttackerInLane()
+    {
+        return this.myLaneSpawner != null && this.myLaneSpawner.transform.childCount > 0;
     }
 
     private void Fire()
