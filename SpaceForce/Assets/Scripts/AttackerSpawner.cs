@@ -31,9 +31,15 @@ public class AttackerSpawner : MonoBehaviour
 
     private void Spawn()
     {
-        Attacker attacker = this.GetAttacker();
+        Attacker attacker = this.GetAttacker(); 
 
-        Instantiate(attacker, transform.position, Quaternion.identity);
+        attacker = Instantiate(
+            original: attacker,
+            position: transform.position,
+            rotation: Quaternion.identity
+        ) as Attacker;
+
+        attacker.transform.parent = transform;
     }
 
     private Attacker GetAttacker()
