@@ -6,13 +6,13 @@ using UnityEngine;
 public class Coin : MonoBehaviour
 {
     [Range(1f, 5f)] [SerializeField] float minSpeed = 3.5f;
-    [Range(5f, 20f)] [SerializeField] float maxSpeed = 10f;
+    [Range(5f, 10f)] [SerializeField] float maxSpeed = 7.5f;
 
-    [Range(0.5f, 2.5f)] [SerializeField] float minShrink = 1.25f;
-    [Range(2.5f, 5.0f)] [SerializeField] float maxShrink = 3.75f;
+    [Range(0.5f, 2.5f)] [SerializeField] float minShrink = 1.75f;
+    [Range(2.5f, 5.0f)] [SerializeField] float maxShrink = 3.25f;
 
-    private const float speedScale = 0.25f;
-    private const float shrinkScale = 0.0075f;
+    private const float speedScale = 0.2f;
+    private const float shrinkScale = 0.0085f;
 
     private float speed;
     private float shrink;
