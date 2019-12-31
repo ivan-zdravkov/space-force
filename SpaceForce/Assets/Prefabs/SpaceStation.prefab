@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fc8382a2af6c3940a026a15c75ccafd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  starCost: 100
+  starCost: 50
   currencyGain: 1
   currencyAmount: 5
   coin: {fileID: 1555688900041962554, guid: 585aca126f988fa48841358b4402c8f4, type: 3}

@@ -5,6 +5,12 @@ using UnityEngine;
 public class DefenderSpawner : MonoBehaviour
 {
     Defender defender;
+    StarDisplay starDisplay;
+
+    public void Start()
+    {
+        this.starDisplay = FindObjectOfType<StarDisplay>();
+    }
 
     public void SetSelectedDefender(Defender defender)
     {
@@ -15,7 +21,7 @@ public class DefenderSpawner : MonoBehaviour
     {
         Vector3 position = this.GetSquareClicked();
 
-        this.SpawnDefender(position);
+        this.AttemptToPlaceDefenderAt(position);
     }
 
     private Vector3 GetSquareClicked()
@@ -39,6 +45,18 @@ public class DefenderSpawner : MonoBehaviour
         position.z = 0;
 
         return position;
+    }
+
+    private void AttemptToPlaceDefenderAt(Vector3 position)
+    {
+        int defenderCost = this.defender.GetStarCost();
+
+        if (this.starDisplay.HaveEnoughStars(defenderCost))
+        {
+            this.SpawnDefender(position);
+
+            this.starDisplay.SpendStars(defenderCost);
+        }
     }
 
     private void SpawnDefender(Vector3 position)

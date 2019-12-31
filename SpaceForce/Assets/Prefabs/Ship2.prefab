@@ -115,7 +115,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fc8382a2af6c3940a026a15c75ccafd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  starCost: 100
+  starCost: 60
+  currencyGain: 1
+  currencyAmount: 10
+  coin: {fileID: 0}
 --- !u!114 &-8975250512047583947
 MonoBehaviour:
   m_ObjectHideFlags: 0
