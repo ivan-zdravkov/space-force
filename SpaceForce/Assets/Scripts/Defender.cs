@@ -6,9 +6,10 @@ public class Defender : MonoBehaviour
 {
     [SerializeField] int starCost = 100;
     [SerializeField] bool currencyGain = true;
-    [Range(1, 20)] [SerializeField] int currencyAmount = 10;
+    [Range(1, 20)] [SerializeField] int currencyAmount = 5;
 
     StarDisplay starDisplay;
+    [SerializeField] Coin coin;
 
     public void Start()
     {
@@ -22,5 +23,16 @@ public class Defender : MonoBehaviour
     public void AddStars()
     {
         this.starDisplay.AddStars(this.currencyAmount);
+
+        for (int i = 0; i < this.currencyAmount; i++)
+        {
+            Coin newCoin = Instantiate(
+                original: this.coin,
+                position: this.transform.position,
+                rotation: Quaternion.identity
+            );
+
+            newCoin.transform.localScale = new Vector3(0.035f, 0.035f, 0.035f);
+        }
     }
 }

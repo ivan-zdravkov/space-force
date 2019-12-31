@@ -149,6 +149,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   starCost: 100
+  currencyGain: 1
+  currencyAmount: 5
+  coin: {fileID: 1555688900041962554, guid: 585aca126f988fa48841358b4402c8f4, type: 3}
 --- !u!114 &1163635350804043672
 MonoBehaviour:
   m_ObjectHideFlags: 0
