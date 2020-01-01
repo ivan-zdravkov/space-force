@@ -25,6 +25,20 @@ public class LevelLoader : MonoBehaviour
         SceneManager.LoadScene(this.currentSceneIndex + 1);
     }
 
+    public void RestartScene()
+    {
+        Time.timeScale = 1;
+
+        SceneManager.LoadScene(this.currentSceneIndex);
+    }
+
+    public void LoadMainMenu()
+    {
+        Time.timeScale = 1;
+
+        SceneManager.LoadScene("Start");
+    }
+
     public IEnumerator WaitOutSplashScreen(int seconds)
     {
         yield return new WaitForSeconds(seconds);

@@ -46,7 +46,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waitToLoad: 5
   winLabel: {fileID: 0}
-  winSound: {fileID: 8300000, guid: 07115a51c00586e43a47ab7cfa2a0c8c, type: 3}
+  loseLabel: {fileID: 0}
+  winSound: {fileID: 0}
+  loseSound: {fileID: 0}
 --- !u!114 &4088058745213098467
 MonoBehaviour:
   m_ObjectHideFlags: 0

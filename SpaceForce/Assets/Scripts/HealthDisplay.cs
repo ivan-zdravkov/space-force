@@ -31,12 +31,13 @@ public class HealthDisplay : MonoBehaviour
             if (this.health <= 0)
             {
                 this.health = 0;
-
-                FindObjectOfType<LevelLoader>().LoadYouLose();
             }
 
             this.UpdateDisplay();
         }
+
+        if (this.health <= 0)
+            FindObjectOfType<LevelController>().HandleLoseCondition();
     }
 
     private void UpdateDisplay()

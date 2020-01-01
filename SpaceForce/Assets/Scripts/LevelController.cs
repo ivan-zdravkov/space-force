@@ -6,8 +6,12 @@ using UnityEngine;
 public class LevelController : MonoBehaviour
 {
     [SerializeField] float waitToLoad = 5f;
+
     [SerializeField] GameObject winLabel;
+    [SerializeField] GameObject loseLabel;
+
     [SerializeField] AudioClip winSound;
+    [SerializeField] AudioClip loseSound;
 
     int numberOfAttackers = 0;
     bool levelTimerFinished = false;
@@ -16,6 +20,7 @@ public class LevelController : MonoBehaviour
     void Start()
     {
         this.winLabel.SetActive(false);
+        this.loseLabel.SetActive(false); 
     }
 
     // Update is called once per frame
@@ -48,6 +53,15 @@ public class LevelController : MonoBehaviour
         yield return new WaitForSeconds(this.waitToLoad);
 
         FindObjectOfType<LevelLoader>().LoadNextScene();
+    }
+
+    public void HandleLoseCondition()
+    {
+        this.loseLabel.SetActive(true);
+
+        AudioSource.PlayClipAtPoint(this.loseSound, transform.position);
+
+        Time.timeScale = 0;
     }
 
     public void FinishTimer()
