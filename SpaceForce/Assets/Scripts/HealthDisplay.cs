@@ -28,6 +28,13 @@ public class HealthDisplay : MonoBehaviour
         {
             this.health -= health;
 
+            if (this.health <= 0)
+            {
+                this.health = 0;
+
+                FindObjectOfType<LevelLoader>().LoadYouLose();
+            }
+
             this.UpdateDisplay();
         }
     }
