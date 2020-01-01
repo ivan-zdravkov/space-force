@@ -5,13 +5,17 @@ using UnityEngine;
 
 public class LevelController : MonoBehaviour
 {
+    [SerializeField] float waitToLoad = 5f;
+    [SerializeField] GameObject winLabel;
+    [SerializeField] AudioClip winSound;
+
     int numberOfAttackers = 0;
     bool levelTimerFinished = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        this.winLabel.SetActive(false);
     }
 
     // Update is called once per frame
@@ -31,8 +35,19 @@ public class LevelController : MonoBehaviour
         
         if (this.numberOfAttackers <= 0 && this.levelTimerFinished)
         {
-
+            StartCoroutine(HandleWinCondition());
         }
+    }
+
+    private IEnumerator HandleWinCondition()
+    {
+        this.winLabel.SetActive(true);
+
+        AudioSource.PlayClipAtPoint(this.winSound, transform.position);
+
+        yield return new WaitForSeconds(this.waitToLoad);
+
+        FindObjectOfType<LevelLoader>().LoadNextScene();
     }
 
     public void FinishTimer()
