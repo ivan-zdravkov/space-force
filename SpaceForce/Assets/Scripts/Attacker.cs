@@ -14,6 +14,7 @@ public class Attacker : MonoBehaviour
     private float currentSpeed = 0f;
 
     GameObject currentTarget;
+    LevelController levelController;
 
     public int Damage
     {
@@ -21,6 +22,18 @@ public class Attacker : MonoBehaviour
         {
             return this.damage;
         }
+    }
+
+    private void Awake()
+    {
+        this.levelController = FindObjectOfType<LevelController>();
+
+        this.levelController.AttackerSpawned();
+    }
+
+    private void OnDestroy()
+    {
+        this.levelController.AttackerDestroyed();
     }
 
     void Start()

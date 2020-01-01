@@ -29,6 +29,11 @@ public class AttackerSpawner : MonoBehaviour
         
     }
 
+    public void StopSpawning()
+    {
+        this.spawn = false;
+    }
+
     private void Spawn()
     {
         Attacker attacker = this.GetAttacker(); 

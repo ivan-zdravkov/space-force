@@ -7,21 +7,20 @@ public class GameTimer : MonoBehaviour
 {
     [SerializeField] float levelTime = 30;
 
+    LevelController levelController;
     Slider slider;
-    // Start is called before the first frame update
+
     void Start()
     {
+        this.levelController = FindObjectOfType<LevelController>();
         this.slider = GetComponent<Slider>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         this.slider.value = Time.timeSinceLevelLoad / this.levelTime;
 
         if (Time.timeSinceLevelLoad >= levelTime)
-        {
-
-        }
+            this.levelController.FinishTimer();
     }
 }
