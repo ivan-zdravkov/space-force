@@ -17,7 +17,10 @@ public class PlayerPrefsController : MonoBehaviour
     {
         get
         {
-            return PlayerPrefs.GetFloat(MASTER_VOLUME_KEY);
+            if (PlayerPrefs.HasKey(MASTER_VOLUME_KEY))
+                return PlayerPrefs.GetFloat(MASTER_VOLUME_KEY);
+            else
+                return 1;
         }
         set
         {
@@ -30,7 +33,10 @@ public class PlayerPrefsController : MonoBehaviour
     {
         get
         {
-            return PlayerPrefs.GetInt(DIFFICULTY_KEY);
+            if (PlayerPrefs.HasKey(DIFFICULTY_KEY))
+                return PlayerPrefs.GetInt(DIFFICULTY_KEY);
+            else
+                return 1;
         }
         set
         {
