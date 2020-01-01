@@ -75,5 +75,7 @@ public class ShipShooter : MonoBehaviour
             x: this.projectileSpeed,
             y: 0
         );
+
+        projectile.transform.parent = transform;
     }
 }

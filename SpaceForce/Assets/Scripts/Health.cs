@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField][Range(10f, 100f)] float health = 30f;
+    [SerializeField][Range(10f, 100f)] int health = 30;
 
     Animator animator;
     Rigidbody2D enemyRigidbody;
@@ -15,7 +15,7 @@ public class Health : MonoBehaviour
         this.enemyRigidbody = this.GetComponent<Rigidbody2D>();
     }
 
-    public void DealDamage(float damage)
+    public void DealDamage(int damage)
     {
         this.health -= damage;
         if (this.health <= 0)

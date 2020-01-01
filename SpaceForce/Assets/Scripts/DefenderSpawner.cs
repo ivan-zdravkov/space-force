@@ -66,5 +66,7 @@ public class DefenderSpawner : MonoBehaviour
             position: position,
             rotation: Quaternion.Euler(new Vector3(0, 0, 270))
         ) as Defender;
+
+        defender.transform.parent = transform;
     }
 }

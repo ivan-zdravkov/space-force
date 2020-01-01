@@ -8,12 +8,20 @@ public class Attacker : MonoBehaviour
     [SerializeField] EnemyAttack enemyAttack;
     [SerializeField] [Range(0.1f, 2.0f)] float shootInterval = 3.5f;
     [SerializeField] [Range(0.1f, 0.5f)] float randomFactor = 0.25f;
-    [SerializeField] float damage;
+    [SerializeField] int damage = 10;
 
     private float shotCounter;
     private float currentSpeed = 0f;
 
     GameObject currentTarget;
+
+    public int Damage
+    {
+        get
+        {
+            return this.damage;
+        }
+    }
 
     void Start()
     {
@@ -79,11 +87,11 @@ public class Attacker : MonoBehaviour
 
             enemyAttack.transform.parent = transform;
 
-            this.Damage();
+            this.DealDamage();
         }
     }
 
-    private void Damage()
+    private void DealDamage()
     {
         if (this.currentTarget)
         {

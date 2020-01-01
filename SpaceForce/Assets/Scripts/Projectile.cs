@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    [SerializeField][Range(10, 50)] float damage = 10.0f;
+    [SerializeField][Range(10, 50)] int damage = 10;
 
     public bool isHit = false;
 
