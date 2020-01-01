@@ -15,4 +15,9 @@ public class EnemyAttack : MonoBehaviour
     {
         
     }
+
+    private void DestroyAttacker()
+    {
+        Destroy(this.gameObject);
+    }
 }

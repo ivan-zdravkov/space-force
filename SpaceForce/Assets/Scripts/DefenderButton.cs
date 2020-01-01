@@ -24,7 +24,7 @@ public class DefenderButton : MonoBehaviour
     {
         SpriteRenderer spriteRenderer = button.GetComponent<SpriteRenderer>();
 
-        if (spriteRenderer != null)
+        if (spriteRenderer)
             spriteRenderer.color = color;
         else
         {

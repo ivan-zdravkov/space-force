@@ -60,7 +60,7 @@ public class ShipShooter : MonoBehaviour
 
     private bool IsAttackerInLane()
     {
-        return this.myLaneSpawner != null && this.myLaneSpawner.transform.childCount > 0;
+        return this.myLaneSpawner && this.myLaneSpawner.transform.childCount > 0;
     }
 
     private void Fire()

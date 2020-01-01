@@ -33,6 +33,9 @@ public class Defender : MonoBehaviour
             );
 
             newCoin.transform.localScale = new Vector3(0.035f, 0.035f, 0.035f);
+            newCoin.transform.parent = transform;
+
+            Destroy(newCoin, 2f);
         }
     }
 

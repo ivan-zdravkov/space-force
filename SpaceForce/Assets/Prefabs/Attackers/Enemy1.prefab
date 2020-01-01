@@ -119,6 +119,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyAttack: {fileID: 1045316094530994174, guid: 34622ff89ea2b7640aaac6898c3938ab,
     type: 3}
+  shootInterval: 1.5
+  randomFactor: 0.15
+  damage: 10
 --- !u!114 &4158043390191891543
 MonoBehaviour:
   m_ObjectHideFlags: 0

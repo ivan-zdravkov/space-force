@@ -29,7 +29,7 @@ public class Projectile : MonoBehaviour
     {
         Attacker attacker = collision.gameObject.GetComponent<Attacker>();
 
-        if (attacker != null)
+        if (attacker)
         {
             this.animator.SetBool("IsHit", true);
             this.projectileRigidbody.velocity = new Vector2(
@@ -41,7 +41,7 @@ public class Projectile : MonoBehaviour
 
             Health health = collision.gameObject.GetComponent<Health>();
 
-            if (health != null)
+            if (health)
                 health.DealDamage(this.damage);
         }
     }

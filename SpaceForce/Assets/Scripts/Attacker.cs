@@ -22,9 +22,9 @@ public class Attacker : MonoBehaviour
     void Update()
     {
         if (this.currentTarget == null)
-            transform.Translate(Vector2.left * Time.deltaTime * this.currentSpeed);
+            this.Move();
         else
-            this.CountDownAndShoot(this.currentTarget);
+            this.StartAttacking();
     }
 
     public void SetMovementSpeed(float speed)
@@ -38,14 +38,18 @@ public class Attacker : MonoBehaviour
         this.shotCounter = UnityEngine.Random.Range(this.shootInterval - this.randomFactor, this.shootInterval + this.randomFactor);
     }
 
-    private void CountDownAndShoot(GameObject currentTarget)
+    private void Move()
+    {
+        transform.Translate(Vector2.left * Time.deltaTime * this.currentSpeed);
+    }
+
+    private void StartAttacking()
     {
         this.shotCounter -= Time.deltaTime;
 
         if (shotCounter <= 0f)
         {
-            this.Attack(currentTarget);
-
+            this.Attack();
             this.ResetShootCounter();
         }
     }
@@ -54,26 +58,39 @@ public class Attacker : MonoBehaviour
     {
         GameObject other = otherCollider.gameObject;
 
-        if (other.GetComponent<Defender>() != null)
-            this.Target(other);
+        if (other.GetComponent<Defender>())
+            this.currentTarget = other;
     }
 
-    public void Target(GameObject target)
+    private void Attack()
     {
-        this.currentTarget = target;
+        if (this.currentTarget)
+        {
+            Vector3 shootPosition = transform.position;
+
+            shootPosition.x -= 0.95f;
+            shootPosition.y -= 0.01f;
+
+            EnemyAttack enemyAttack = Instantiate(
+                original: this.enemyAttack,
+                position: shootPosition,
+                rotation: Quaternion.identity
+            ) as EnemyAttack;
+
+            enemyAttack.transform.parent = transform;
+
+            this.Damage();
+        }
     }
 
-    private void Attack(GameObject currentTarget)
+    private void Damage()
     {
-        Vector3 shootPosition = transform.position;
+        if (this.currentTarget)
+        {
+            Health health = currentTarget.GetComponent<Health>();
 
-        shootPosition.x -= 0.95f;
-        shootPosition.y -= 0.01f;
-
-        Instantiate(
-            original: enemyAttack,
-            position: shootPosition,
-            rotation: Quaternion.identity
-        );
+            if (health)
+                health.DealDamage(this.damage);
+        }
     }
 }

@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 8997626423714065018}
   - component: {fileID: 5530772588962602030}
   - component: {fileID: 1163635350804043672}
+  - component: {fileID: -4421588326835841673}
   - component: {fileID: 8701552254883241915}
   m_Layer: 0
   m_Name: SpaceStation
@@ -166,6 +167,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotateSpeed: 1
+--- !u!114 &-4421588326835841673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8997626423714065021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e190165ed90d7c842b5ccb558f4f21b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 50
 --- !u!58 &8701552254883241915
 CircleCollider2D:
   m_ObjectHideFlags: 0

@@ -22,10 +22,7 @@ public class SpaceStation : MonoBehaviour
             axis: Vector3.back,
             angle: Time.deltaTime * this.rotateSpeed * 30);
 
-        //this.top.position = new Vector2(0f, 0.3f);
-        //this.bottom.position = new Vector2(0f, -0.3f);
-        
-        //transform.Rotate(Vector2.left, this.rotateSpeed * Time.deltaTime);
-        //transform.Rotate(new Vector3(0, 0, this.rotateSpeed * 90 * Time.deltaTime));
+        this.top.position = new Vector2(0f, 0.3f);
+        this.bottom.position = new Vector2(0f, -0.3f);
     }
 }

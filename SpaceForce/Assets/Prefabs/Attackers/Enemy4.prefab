@@ -121,7 +121,7 @@ MonoBehaviour:
     type: 3}
   shootInterval: 1.5
   randomFactor: 0.15
-  damage: 0
+  damage: 10
 --- !u!114 &4158043390191891543
 MonoBehaviour:
   m_ObjectHideFlags: 0
