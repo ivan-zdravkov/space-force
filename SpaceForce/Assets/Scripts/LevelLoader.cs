@@ -50,4 +50,14 @@ public class LevelLoader : MonoBehaviour
     {
         SceneManager.LoadScene("LoseScreen");
     }
+
+    public void LoadOptions()
+    {
+        SceneManager.LoadScene("Options");
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
 }

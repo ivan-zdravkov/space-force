@@ -33,7 +33,8 @@ public class Attacker : MonoBehaviour
 
     private void OnDestroy()
     {
-        this.levelController.AttackerDestroyed();
+        if (this.levelController)
+            this.levelController.AttackerDestroyed();
     }
 
     void Start()
