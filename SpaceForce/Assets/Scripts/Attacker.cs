@@ -5,7 +5,13 @@ using UnityEngine;
 
 public class Attacker : MonoBehaviour
 {
-    float currentSpeed = 0f;
+    [SerializeField] EnemyAttack enemyAttack;
+    [SerializeField] [Range(0.1f, 2.0f)] float shootInterval = 3.5f;
+    [SerializeField] [Range(0.1f, 0.5f)] float randomFactor = 0.25f;
+    [SerializeField] float damage;
+
+    private float shotCounter;
+    private float currentSpeed = 0f;
 
     GameObject currentTarget;
 
@@ -18,13 +24,30 @@ public class Attacker : MonoBehaviour
         if (this.currentTarget == null)
             transform.Translate(Vector2.left * Time.deltaTime * this.currentSpeed);
         else
-            this.Attack(this.currentTarget);
+            this.CountDownAndShoot(this.currentTarget);
     }
 
     public void SetMovementSpeed(float speed)
     {
         if (this.currentSpeed != speed)
             this.currentSpeed = speed;
+    }
+
+    private void ResetShootCounter()
+    {
+        this.shotCounter = UnityEngine.Random.Range(this.shootInterval - this.randomFactor, this.shootInterval + this.randomFactor);
+    }
+
+    private void CountDownAndShoot(GameObject currentTarget)
+    {
+        this.shotCounter -= Time.deltaTime;
+
+        if (shotCounter <= 0f)
+        {
+            this.Attack(currentTarget);
+
+            this.ResetShootCounter();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D otherCollider)
@@ -42,5 +65,15 @@ public class Attacker : MonoBehaviour
 
     private void Attack(GameObject currentTarget)
     {
+        Vector3 shootPosition = transform.position;
+
+        shootPosition.x -= 0.95f;
+        shootPosition.y -= 0.01f;
+
+        Instantiate(
+            original: enemyAttack,
+            position: shootPosition,
+            rotation: Quaternion.identity
+        );
     }
 }
