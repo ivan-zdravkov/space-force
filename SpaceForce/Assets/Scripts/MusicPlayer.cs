@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class MusicPlayer : MonoBehaviour
 {
+    [SerializeField] AudioClip loadingSound;
+
     AudioSource audioSource;
-    // Start is called before the first frame update
     void Start()
     {
+        AudioSource.PlayClipAtPoint(this.loadingSound, transform.position, PlayerPrefsController.MasterVolume);
+
         DontDestroyOnLoad(this);
 
         this.audioSource = GetComponent<AudioSource>();

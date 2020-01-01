@@ -92,7 +92,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4550d04374ceb734191b6ca070003981, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stars: 100
 --- !u!1 &5146607038830543754
 GameObject:
   m_ObjectHideFlags: 0
@@ -260,7 +259,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2930daa180b37d45a0043312b0ca1e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
 --- !u!1 &6547900296175045759
 GameObject:
   m_ObjectHideFlags: 0
@@ -1010,7 +1008,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1abab6a60f3d16e4e8ef67654d70c005, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelTime: 30
+  levelTime: 60
 --- !u!1 &8921606614467937352
 GameObject:
   m_ObjectHideFlags: 0

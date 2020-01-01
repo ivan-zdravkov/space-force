@@ -7,8 +7,8 @@ public class PlayerPrefsController : MonoBehaviour
     const float MIN_VOLUME = 0f;
     const float MAX_VOLUME = 1f;
 
-    const float MIN_DIFFICULTY = 0f;
-    const float MAX_DIFFICULTY = 1f;
+    const int MIN_DIFFICULTY = 0;
+    const int MAX_DIFFICULTY = 2;
 
     const string MASTER_VOLUME_KEY = "Master Volume";
     const string DIFFICULTY_KEY = "Difficulty";
@@ -26,16 +26,16 @@ public class PlayerPrefsController : MonoBehaviour
         }
     }
 
-    public static float Difficulty
+    public static int Difficulty
     {
         get
         {
-            return PlayerPrefs.GetFloat(DIFFICULTY_KEY);
+            return PlayerPrefs.GetInt(DIFFICULTY_KEY);
         }
         set
         {
             if (MIN_DIFFICULTY <= value && value <= MAX_DIFFICULTY)
-                PlayerPrefs.SetFloat(DIFFICULTY_KEY, value);
+                PlayerPrefs.SetInt(DIFFICULTY_KEY, value);
         }
     }
 }

@@ -48,7 +48,7 @@ public class LevelController : MonoBehaviour
     {
         this.winLabel.SetActive(true);
 
-        AudioSource.PlayClipAtPoint(this.winSound, transform.position);
+        AudioSource.PlayClipAtPoint(this.winSound, transform.position, PlayerPrefsController.MasterVolume);
 
         yield return new WaitForSeconds(this.waitToLoad);
 
@@ -59,7 +59,7 @@ public class LevelController : MonoBehaviour
     {
         this.loseLabel.SetActive(true);
 
-        AudioSource.PlayClipAtPoint(this.loseSound, transform.position);
+        AudioSource.PlayClipAtPoint(this.loseSound, transform.position, PlayerPrefsController.MasterVolume);
 
         Time.timeScale = 0;
     }

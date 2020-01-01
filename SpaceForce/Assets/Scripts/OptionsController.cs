@@ -9,7 +9,7 @@ public class OptionsController : MonoBehaviour
     [SerializeField] Slider difficultySlider;
 
     [SerializeField] float defaultVolume = 0.5f;
-    [SerializeField] float defaultDifficulty = 0.5f;
+    [SerializeField] int defaultDifficulty = 1;
 
     MusicPlayer musicPlayer;
 
@@ -37,6 +37,6 @@ public class OptionsController : MonoBehaviour
     public void Save()
     {
         PlayerPrefsController.MasterVolume = this.volumeSlider.value;
-        PlayerPrefsController.Difficulty = this.difficultySlider.value;
+        PlayerPrefsController.Difficulty = Mathf.FloorToInt(this.difficultySlider.value);
     }
 }

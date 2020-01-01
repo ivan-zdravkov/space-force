@@ -5,12 +5,16 @@ using UnityEngine;
 public class AttackerSpawner : MonoBehaviour
 {
     bool spawn = true;
-    [SerializeField] [Range(1, 5)] float minSpawn = 5f;
-    [SerializeField] [Range(5, 20)] float maxSpawn = 15f;
+
+    float minSpawn;
+    float maxSpawn;
+
     [SerializeField] Attacker[] attackerPrefabs;
 
     IEnumerator Start()
     {
+        SetSpawnTimers();
+            
         Attacker attacker = this.GetAttacker();
 
         attacker.GetComponent<SpriteRenderer>().sortingOrder = 5;
@@ -22,13 +26,6 @@ public class AttackerSpawner : MonoBehaviour
             this.Spawn();
         }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void StopSpawning()
     {
         this.spawn = false;
@@ -55,5 +52,25 @@ public class AttackerSpawner : MonoBehaviour
         int i = Random.Range(0, this.attackerPrefabs.Length - 1);
 
         return this.attackerPrefabs[i];
+    }
+
+    private void SetSpawnTimers()
+    {
+        switch (PlayerPrefsController.Difficulty)
+        {
+            case 0:
+            default:
+                this.minSpawn = 7.5f;
+                this.maxSpawn = 12.5f;
+                break;
+            case 1:
+                this.minSpawn = 5f;
+                this.maxSpawn = 10f;
+                break;
+            case 2:
+                this.minSpawn = 2.5f;
+                this.maxSpawn = 7.5f;
+                break;
+        }
     }
 }

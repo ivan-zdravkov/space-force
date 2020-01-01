@@ -909,6 +909,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8295381240782977585, guid: 6ad901ae80444824b8d6021d4a3e3c3c,
+        type: 3}
+      propertyPath: m_Name
+      value: Canvas
+      objectReference: {fileID: 0}
     - target: {fileID: 3069840559492747724, guid: 6ad901ae80444824b8d6021d4a3e3c3c,
         type: 3}
       propertyPath: m_Sprite
@@ -1185,11 +1190,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: StarText
-      objectReference: {fileID: 0}
-    - target: {fileID: 8295381240782977585, guid: 6ad901ae80444824b8d6021d4a3e3c3c,
-        type: 3}
-      propertyPath: m_Name
-      value: Canvas
       objectReference: {fileID: 0}
     - target: {fileID: 8295381240782977589, guid: 6ad901ae80444824b8d6021d4a3e3c3c,
         type: 3}

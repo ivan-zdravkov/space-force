@@ -5,11 +5,13 @@ using UnityEngine.UI;
 
 public class StarDisplay : MonoBehaviour
 {
-    [SerializeField] int stars = 100;
+    int stars;
     Text starText;
 
     void Start()
     {
+        this.SetStars();
+
         this.starText = GetComponent<Text>();
 
         this.UpdateDisplay();
@@ -40,5 +42,22 @@ public class StarDisplay : MonoBehaviour
     private void UpdateDisplay()
     {
         this.starText.text = this.stars.ToString();
+    }
+
+    private void SetStars()
+    {
+        switch (PlayerPrefsController.Difficulty)
+        {
+            case 0:
+            default:
+                this.stars = 250;
+                break;
+            case 1:
+                this.stars = 200;
+                break;
+            case 2:
+                this.stars = 150;
+                break;
+        }
     }
 }
